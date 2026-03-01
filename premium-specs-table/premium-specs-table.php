@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Premium Specs Table for Elementor
  * Description: A fully customizable premium specifications table widget for Elementor with drag & drop reordering, icon selection, visibility controls, and shortcode support.
- * Version: 1.0.0
+ * Version: 1.1.0
  * Author: Sky Web Design
  * Author URI: https://skywebdesign.co.uk
  * Text Domain: premium-specs-table
@@ -13,7 +13,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('PREMIUM_SPECS_TABLE_VERSION', '1.0.0');
+define('PREMIUM_SPECS_TABLE_VERSION', '1.1.0');
 define('PREMIUM_SPECS_TABLE_PATH', plugin_dir_path(__FILE__));
 define('PREMIUM_SPECS_TABLE_URL', plugin_dir_url(__FILE__));
 
