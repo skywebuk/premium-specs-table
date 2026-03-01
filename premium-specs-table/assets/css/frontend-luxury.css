@@ -1,0 +1,353 @@
+/**
+ * Premium Specs Table Luxury - Frontend Styles
+ * Black & Gold Premium Design
+ */
+
+/* ===========================
+   TABLE CONTAINER
+   =========================== */
+.pst-lux {
+    width: 100%;
+    position: relative;
+    background: linear-gradient(160deg, #0a0a0a 0%, #111111 40%, #0d0b08 100%);
+    border-radius: 20px;
+    padding: 0;
+    border: 1px solid rgba(212, 175, 55, 0.15);
+    box-shadow:
+        0 0 0 1px rgba(212, 175, 55, 0.05),
+        0 25px 60px -15px rgba(0, 0, 0, 0.7),
+        0 0 40px -10px rgba(212, 175, 55, 0.07);
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.pst-lux *,
+.pst-lux *::before,
+.pst-lux *::after {
+    box-sizing: border-box;
+}
+
+/* Gold shimmer line at top */
+.pst-lux::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 10%;
+    right: 10%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.6), transparent);
+}
+
+/* ===========================
+   HEADER
+   =========================== */
+.pst-lux-header {
+    padding: 28px 32px 20px;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.08);
+    position: relative;
+}
+
+.pst-lux-title {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: 0.03em;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pst-lux-title-accent {
+    width: 3px;
+    height: 20px;
+    background: linear-gradient(180deg, #d4af37, #b8962e);
+    border-radius: 2px;
+    flex-shrink: 0;
+}
+
+.pst-lux-subtitle {
+    font-size: 0.8rem;
+    color: rgba(212, 175, 55, 0.5);
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin: 8px 0 0 13px;
+}
+
+/* ===========================
+   ROWS CONTAINER
+   =========================== */
+.pst-lux-body {
+    padding: 8px;
+}
+
+/* ===========================
+   ROW
+   =========================== */
+.pst-lux-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    border-radius: 12px;
+    transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    position: relative;
+    margin: 0;
+}
+
+.pst-lux-row::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 25%;
+    bottom: 25%;
+    width: 2px;
+    background: linear-gradient(180deg, #d4af37, #b8962e);
+    border-radius: 1px;
+    opacity: 0;
+    transform: scaleY(0.5);
+    transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.pst-lux-row:hover {
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.06), rgba(212, 175, 55, 0.02));
+}
+
+.pst-lux-row:hover::before {
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+.pst-lux-row:not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+/* ===========================
+   LABEL (icon + text)
+   =========================== */
+.pst-lux-label {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+/* ===========================
+   ICON
+   =========================== */
+.pst-lux-icon {
+    width: 20px;
+    height: 20px;
+    color: #d4af37;
+    opacity: 0.5;
+    flex-shrink: 0;
+    transition: opacity 0.3s ease;
+}
+
+.pst-lux-row:hover .pst-lux-icon {
+    opacity: 0.85;
+}
+
+/* ===========================
+   VALUE
+   =========================== */
+.pst-lux-value {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin: 0;
+    text-align: right;
+}
+
+/* Highlighted Value */
+.pst-lux-value.pst-lux-highlight {
+    background: linear-gradient(135deg, #d4af37, #f5d96a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 600;
+}
+
+/* ===========================
+   BADGE
+   =========================== */
+.pst-lux-badge {
+    display: inline-flex;
+    align-items: center;
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.12), rgba(212, 175, 55, 0.04));
+    color: #d4af37;
+    padding: 6px 16px;
+    border-radius: 8px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    border: 1px solid rgba(212, 175, 55, 0.15);
+    position: relative;
+    overflow: hidden;
+}
+
+.pst-lux-badge::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.08), transparent);
+    transition: left 0.6s ease;
+}
+
+.pst-lux-row:hover .pst-lux-badge::before {
+    left: 100%;
+}
+
+/* ===========================
+   DIVIDER
+   =========================== */
+.pst-lux-divider {
+    height: 1px;
+    margin: 0 24px;
+    background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.12), transparent);
+}
+
+/* ===========================
+   PRICE ROW
+   =========================== */
+.pst-lux-price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 32px;
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.06), rgba(212, 175, 55, 0.02));
+    border-top: 1px solid rgba(212, 175, 55, 0.1);
+    position: relative;
+}
+
+.pst-lux-price-row::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 15%;
+    right: 15%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.3), transparent);
+}
+
+.pst-lux-price-label {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.pst-lux-price-wrap {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 6px;
+    margin: 0;
+}
+
+.pst-lux-price-prefix,
+.pst-lux-price-suffix {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.pst-lux-price-amount {
+    font-size: 1.35rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #d4af37 0%, #f5d96a 50%, #d4af37 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: -0.01em;
+}
+
+/* ===========================
+   FOOTER
+   =========================== */
+.pst-lux-footer {
+    padding: 14px 32px 18px;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.pst-lux-footer-text {
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.2);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+/* ===========================
+   RESPONSIVE
+   =========================== */
+@media (max-width: 575px) {
+    .pst-lux {
+        border-radius: 16px;
+    }
+
+    .pst-lux-header {
+        padding: 22px 20px 16px;
+    }
+
+    .pst-lux-title {
+        font-size: 1rem;
+    }
+
+    .pst-lux-subtitle {
+        font-size: 0.7rem;
+    }
+
+    .pst-lux-body {
+        padding: 4px;
+    }
+
+    .pst-lux-row {
+        padding: 14px 16px;
+        border-radius: 10px;
+    }
+
+    .pst-lux-label {
+        font-size: 0.82rem;
+        gap: 10px;
+    }
+
+    .pst-lux-value {
+        font-size: 0.82rem;
+    }
+
+    .pst-lux-icon {
+        width: 18px;
+        height: 18px;
+    }
+
+    .pst-lux-badge {
+        padding: 5px 12px;
+        font-size: 0.75rem;
+    }
+
+    .pst-lux-divider {
+        margin: 0 16px;
+    }
+
+    .pst-lux-price-row {
+        padding: 18px 20px;
+    }
+
+    .pst-lux-price-amount {
+        font-size: 1.15rem;
+    }
+
+    .pst-lux-footer {
+        padding: 12px 20px 14px;
+    }
+}

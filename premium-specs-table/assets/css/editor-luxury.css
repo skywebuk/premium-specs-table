@@ -1,0 +1,200 @@
+/**
+ * Premium Specs Table Luxury - Elementor Editor Styles
+ * Black & Gold Premium Design
+ */
+
+.elementor-widget-premium_specs_table_luxury .pst-lux {
+    width: 100%;
+    position: relative;
+    background: linear-gradient(160deg, #0a0a0a 0%, #111111 40%, #0d0b08 100%);
+    border-radius: 20px;
+    padding: 0;
+    border: 1px solid rgba(212, 175, 55, 0.15);
+    box-shadow:
+        0 0 0 1px rgba(212, 175, 55, 0.05),
+        0 25px 60px -15px rgba(0, 0, 0, 0.7),
+        0 0 40px -10px rgba(212, 175, 55, 0.07);
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.elementor-widget-premium_specs_table_luxury .pst-lux *,
+.elementor-widget-premium_specs_table_luxury .pst-lux *::before,
+.elementor-widget-premium_specs_table_luxury .pst-lux *::after {
+    box-sizing: border-box;
+}
+
+.elementor-widget-premium_specs_table_luxury .pst-lux::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 10%;
+    right: 10%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.6), transparent);
+}
+
+/* Header */
+.elementor-widget-premium_specs_table_luxury .pst-lux-header {
+    padding: 28px 32px 20px;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.08);
+}
+
+.elementor-widget-premium_specs_table_luxury .pst-lux-title {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: 0.03em;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.elementor-widget-premium_specs_table_luxury .pst-lux-title-accent {
+    width: 3px;
+    height: 20px;
+    background: linear-gradient(180deg, #d4af37, #b8962e);
+    border-radius: 2px;
+    flex-shrink: 0;
+}
+
+.elementor-widget-premium_specs_table_luxury .pst-lux-subtitle {
+    font-size: 0.8rem;
+    color: rgba(212, 175, 55, 0.5);
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin: 8px 0 0 13px;
+}
+
+/* Body */
+.elementor-widget-premium_specs_table_luxury .pst-lux-body {
+    padding: 8px;
+}
+
+/* Rows */
+.elementor-widget-premium_specs_table_luxury .pst-lux-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    border-radius: 12px;
+    transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    position: relative;
+}
+
+.elementor-widget-premium_specs_table_luxury .pst-lux-row:not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+/* Label */
+.elementor-widget-premium_specs_table_luxury .pst-lux-label {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+/* Icon */
+.elementor-widget-premium_specs_table_luxury .pst-lux-icon {
+    width: 20px;
+    height: 20px;
+    color: #d4af37;
+    opacity: 0.5;
+    flex-shrink: 0;
+}
+
+/* Value */
+.elementor-widget-premium_specs_table_luxury .pst-lux-value {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.elementor-widget-premium_specs_table_luxury .pst-lux-value.pst-lux-highlight {
+    background: linear-gradient(135deg, #d4af37, #f5d96a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 600;
+}
+
+/* Badge */
+.elementor-widget-premium_specs_table_luxury .pst-lux-badge {
+    display: inline-flex;
+    align-items: center;
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.12), rgba(212, 175, 55, 0.04));
+    color: #d4af37;
+    padding: 6px 16px;
+    border-radius: 8px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    border: 1px solid rgba(212, 175, 55, 0.15);
+}
+
+/* Divider */
+.elementor-widget-premium_specs_table_luxury .pst-lux-divider {
+    height: 1px;
+    margin: 0 24px;
+    background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.12), transparent);
+}
+
+/* Price Row */
+.elementor-widget-premium_specs_table_luxury .pst-lux-price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 32px;
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.06), rgba(212, 175, 55, 0.02));
+    border-top: 1px solid rgba(212, 175, 55, 0.1);
+}
+
+.elementor-widget-premium_specs_table_luxury .pst-lux-price-label {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.elementor-widget-premium_specs_table_luxury .pst-lux-price-wrap {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 6px;
+    margin: 0;
+}
+
+.elementor-widget-premium_specs_table_luxury .pst-lux-price-prefix,
+.elementor-widget-premium_specs_table_luxury .pst-lux-price-suffix {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.8rem;
+}
+
+.elementor-widget-premium_specs_table_luxury .pst-lux-price-amount {
+    font-size: 1.35rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #d4af37 0%, #f5d96a 50%, #d4af37 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Footer */
+.elementor-widget-premium_specs_table_luxury .pst-lux-footer {
+    padding: 14px 32px 18px;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.elementor-widget-premium_specs_table_luxury .pst-lux-footer-text {
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.2);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin: 0;
+}

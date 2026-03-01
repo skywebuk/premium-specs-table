@@ -70,6 +70,9 @@ final class Premium_Specs_Table {
     public function register_widgets($widgets_manager) {
         require_once(PREMIUM_SPECS_TABLE_PATH . 'widgets/specs-table-widget.php');
         $widgets_manager->register(new \Premium_Specs_Table_Widget());
+
+        require_once(PREMIUM_SPECS_TABLE_PATH . 'widgets/specs-table-luxury-widget.php');
+        $widgets_manager->register(new \Premium_Specs_Table_Luxury_Widget());
     }
 
     public function frontend_styles() {
@@ -79,12 +82,24 @@ final class Premium_Specs_Table {
             [],
             PREMIUM_SPECS_TABLE_VERSION
         );
+        wp_enqueue_style(
+            'premium-specs-table-luxury',
+            PREMIUM_SPECS_TABLE_URL . 'assets/css/frontend-luxury.css',
+            [],
+            PREMIUM_SPECS_TABLE_VERSION
+        );
     }
 
     public function editor_styles() {
         wp_enqueue_style(
             'premium-specs-table-editor',
             PREMIUM_SPECS_TABLE_URL . 'assets/css/editor.css',
+            [],
+            PREMIUM_SPECS_TABLE_VERSION
+        );
+        wp_enqueue_style(
+            'premium-specs-table-luxury-editor',
+            PREMIUM_SPECS_TABLE_URL . 'assets/css/editor-luxury.css',
             [],
             PREMIUM_SPECS_TABLE_VERSION
         );
