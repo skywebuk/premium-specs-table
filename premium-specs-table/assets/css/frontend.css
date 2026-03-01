@@ -77,6 +77,10 @@
     border-top: 1px solid rgba(255, 255, 255, 0.04);
 }
 
+.pst-row + .pst-price-row {
+    margin-top: -1px;
+}
+
 .pst-price {
     display: inline-flex;
     align-items: baseline;

@@ -31,11 +31,19 @@ final class Premium_Specs_Table {
         return self::$_instance;
     }
 
-    public function __construct() {
+    private function __construct() {
         add_action('plugins_loaded', [$this, 'init']);
     }
 
+    private function __clone() {}
+
+    public function __wakeup() {
+        throw new \Exception('Cannot unserialize a singleton.');
+    }
+
     public function init() {
+        load_plugin_textdomain('premium-specs-table', false, dirname(plugin_basename(__FILE__)) . '/languages/');
+
         // Check if Elementor is installed and activated
         if (!did_action('elementor/loaded')) {
             add_action('admin_notices', [$this, 'admin_notice_missing_elementor']);
