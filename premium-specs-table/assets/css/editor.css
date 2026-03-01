@@ -1,0 +1,66 @@
+/**
+ * Premium Specs Table - Elementor Editor Styles
+ */
+
+.elementor-widget-premium_specs_table .pst-table {
+    width: 100%;
+    background: linear-gradient(145deg, #141414 0%, #0d0d0d 100%);
+    border-radius: 16px;
+    padding: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.elementor-widget-premium_specs_table .pst-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 24px;
+    border-radius: 10px;
+}
+
+.elementor-widget-premium_specs_table .pst-row:not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.elementor-widget-premium_specs_table .pst-label {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: #888888;
+    font-size: 0.95rem;
+    font-weight: 400;
+}
+
+.elementor-widget-premium_specs_table .pst-icon {
+    width: 20px;
+    height: 20px;
+    color: #888888;
+    opacity: 0.6;
+    flex-shrink: 0;
+}
+
+.elementor-widget-premium_specs_table .pst-value {
+    color: #ffffff;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.elementor-widget-premium_specs_table .pst-value.pst-highlight {
+    color: #d4af37;
+}
+
+.elementor-widget-premium_specs_table .pst-badge {
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.15), rgba(212, 175, 55, 0.05));
+    color: #d4af37;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.elementor-widget-premium_specs_table .pst-price-value {
+    color: #d4af37;
+    font-weight: 600;
+}
